@@ -9,7 +9,7 @@ function App() {
   const [user, setUser] = useState({name: "", codingLevel: 0});
 
   useEffect(() => {
-    axios('http://localhost:4001/user').then((response) => {
+    axios('/user').then((response) => {
       console.log(response.data);
       setUser(response.data)
     })
